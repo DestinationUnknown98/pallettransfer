@@ -1,1 +1,2 @@
 # pallettransfer
+Bits for the website pallettransfer.eu im creating in wordpress elementor. I dont have elementor premium, si i dont have access to custom CSS widget. Therefore I am adding inline css into html code. 

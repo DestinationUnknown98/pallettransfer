@@ -1,0 +1,110 @@
+<!--Table with technical specifications that opens after a click on the arrow icon, czech version-->
+
+<style>
+    section.tech-specs {
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #FDF6EC;
+    }
+  
+    section.tech-specs h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  
+    details {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+    }
+  
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  
+    .arrow-icon {
+      width: 55px;
+      height: 55px;
+      transition: transform 0.3s ease;
+    }
+  
+    details[open] .arrow-icon {
+      transform: rotate(180deg);
+    }
+  
+    table.specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 18px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+  
+    table.specs-table th,
+    table.specs-table td {
+      border: 1px solid #ddd;
+      padding: 16px 24px;
+      text-align: left;
+    }
+  
+    table.specs-table th {
+      background-color: #eaeaea;
+      font-weight: 600;
+    }
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    @media (max-width: 600px) {
+      table.specs-table th,
+      table.specs-table td {
+        padding: 12px;
+        font-size: 16px;
+      }
+  
+      .arrow-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  </style>
+  
+  <section class="tech-specs">
+    <h2>Technické specifikace</h2>
+    <details>
+      <summary>
+        <img src="https://img.icons8.com/?size=100&id=37315&format=png&color=000000" alt="Arrow Icon" class="arrow-icon" />
+      </summary>
+      <table class="specs-table">
+        <tr>
+          <th>Spec</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>450 kg</td>
+        </tr>
+        <tr>
+          <td>Transfer Time</td>
+          <td>30 seconds</td>
+        </tr>
+        <tr>
+          <td>Power Supply</td>
+          <td>230 V</td>
+        </tr>
+        <tr>
+          <td>Dimensions</td>
+          <td>1200 × 800 × 1500 mm</td>
+        </tr
+  
